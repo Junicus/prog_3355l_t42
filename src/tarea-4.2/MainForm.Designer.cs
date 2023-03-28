@@ -188,6 +188,7 @@ partial class MainForm
             this.tbPrice.ForeColor = System.Drawing.Color.Red;
             this.tbPrice.Location = new System.Drawing.Point(630, 166);
             this.tbPrice.Name = "tbPrice";
+            this.tbPrice.ReadOnly = true;
             this.tbPrice.Size = new System.Drawing.Size(100, 34);
             this.tbPrice.TabIndex = 3;
             this.tbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -242,6 +243,7 @@ partial class MainForm
             this.tbDeparturePais.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbDeparturePais.Location = new System.Drawing.Point(60, 13);
             this.tbDeparturePais.Name = "tbDeparturePais";
+            this.tbDeparturePais.ReadOnly = true;
             this.tbDeparturePais.Size = new System.Drawing.Size(146, 23);
             this.tbDeparturePais.TabIndex = 2;
             // 
@@ -250,6 +252,7 @@ partial class MainForm
             this.tbArrivalPais.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbArrivalPais.Location = new System.Drawing.Point(60, 63);
             this.tbArrivalPais.Name = "tbArrivalPais";
+            this.tbArrivalPais.ReadOnly = true;
             this.tbArrivalPais.Size = new System.Drawing.Size(146, 23);
             this.tbArrivalPais.TabIndex = 3;
             // 
@@ -258,6 +261,7 @@ partial class MainForm
             this.tbDepartureCiudadAirport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbDepartureCiudadAirport.Location = new System.Drawing.Point(212, 13);
             this.tbDepartureCiudadAirport.Name = "tbDepartureCiudadAirport";
+            this.tbDepartureCiudadAirport.ReadOnly = true;
             this.tbDepartureCiudadAirport.Size = new System.Drawing.Size(298, 23);
             this.tbDepartureCiudadAirport.TabIndex = 4;
             // 
@@ -266,6 +270,7 @@ partial class MainForm
             this.tbArrivalCiudadAirport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbArrivalCiudadAirport.Location = new System.Drawing.Point(212, 63);
             this.tbArrivalCiudadAirport.Name = "tbArrivalCiudadAirport";
+            this.tbArrivalCiudadAirport.ReadOnly = true;
             this.tbArrivalCiudadAirport.Size = new System.Drawing.Size(298, 23);
             this.tbArrivalCiudadAirport.TabIndex = 5;
             // 

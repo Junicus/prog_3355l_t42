@@ -51,10 +51,22 @@ public partial class MainForm : Form
     {
         tbDeparturePais.Text = lstPais.SelectedValue.ToString();
         tbDepartureCiudadAirport.Text = lstCiudadAirport.SelectedValue.ToString();
+        if (tbDeparturePais.Text == tbArrivalPais.Text)
+        {
+            tbArrivalPais.Text = "";
+            tbArrivalCiudadAirport.Text = "";
+        }
     }
 
     private void btnArrival_Click(object sender, EventArgs e)
     {
+        if (tbDeparturePais.Text == lstPais.SelectedValue.ToString())
+        {
+            MessageBox.Show("Salida y Llegada no puede ser el mismo pais", "Error", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+            return;
+        }
+
         tbArrivalPais.Text = lstPais.SelectedValue.ToString();
         tbArrivalCiudadAirport.Text = lstCiudadAirport.SelectedValue.ToString();
     }
@@ -68,7 +80,10 @@ public partial class MainForm : Form
             return;
         }
 
-
+        // Fix issue with winforms foreground color when textbox is read only
+        tbPrice.Font = tbPrice.Font;
+        tbPrice.BackColor = tbPrice.BackColor;
+        tbPrice.ForeColor = Color.Red;
         var precio = _prices.Single(kvp =>
             kvp.Key.Departure == tbDeparturePais.Text && kvp.Key.Arrival == tbArrivalPais.Text);
         tbPrice.Text = precio.Value.ToString();
